@@ -1,7 +1,7 @@
 var array1=[]
 var x=5,Bullet,Shooted=0,create=0,stage=1,killed=0
 function setup() {
-  createCanvas(displayWidth-20,displayHeight-20);
+  createCanvas(displayWidth,displayHeight);
   
       
       Bullet=createGroup();
