@@ -1,11 +1,11 @@
 var array1=[]
 var x=5,Bullet,Shooted=0,create=0,stage=1,killed=0
 function setup() {
-  createCanvas(displayWidth-50,displayHeight-100);
+  createCanvas(displayWidth-20,displayHeight-20);
   
       
       Bullet=createGroup();
-      Gun=createSprite(displayWidth-100,Math.round(random(0,displayHeight)),40,40);
+      Gun=createSprite(displayWidth-100,Math.round(random(100,displayHeight)),40,40);
      Gun.shapeColor="Pink"
      
 
