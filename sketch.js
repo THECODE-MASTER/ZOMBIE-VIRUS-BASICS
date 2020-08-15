@@ -18,17 +18,17 @@ function draw() {
   if(stage===1){
   if(create===0){
     create=1
-    zombie1=createSprite(displayWidth-300,Math.round(random(0,displayHeight-100)),40,40)
+    zombie1=createSprite(displayWidth-300,Math.round(random(100,displayHeight-100)),40,40)
     properties(zombie1);
-    zombie2=createSprite(displayWidth-300,Math.round(random(0,displayHeight-100)),40,40)
+    zombie2=createSprite(displayWidth-300,Math.round(random(100,displayHeight-100)),40,40)
     properties(zombie2);
-    zombie3=createSprite(displayWidth-300,Math.round(random(0,displayHeight-100)),40,40)
+    zombie3=createSprite(displayWidth-300,Math.round(random(100,displayHeight-100)),40,40)
     properties(zombie3);
-    zombie4=createSprite(displayWidth-300,Math.round(random(0,displayHeight-100)),40,40)
+    zombie4=createSprite(displayWidth-300,Math.round(random(100,displayHeight-100)),40,40)
     properties(zombie4);
-    zombie5=createSprite(displayWidth-300,Math.round(random(0,displayHeight-100)),40,40)
+    zombie5=createSprite(displayWidth-300,Math.round(random(100,displayHeight-100)),40,40)
     properties(zombie5);
-    zombie6=createSprite(displayWidth-300,Math.round(random(0,displayHeight-100)),40,40)
+    zombie6=createSprite(displayWidth-300,Math.round(random(100,displayHeight-100)),40,40)
     properties(zombie6);  
       }
  shoot();
@@ -63,28 +63,30 @@ function draw() {
     console.log(-2)
     killed=killed+1
   } 
-  if(killed>=5){
-    stage=2
+  if(killed>=6){
+    stage=stage+1;
     console.log(stage);
-    console.log("Stage 1 Won")
+    console.log("Stage Won")
+    create=0;
+    killed=0;
   }
 }
   if(stage===2){
-    killed=0;
-    create=0;
+    
+    
     if(create===0){
       create=1
-      zombie7=createSprite(displayWidth-300,Math.round(random(0,displayHeight-100)),40,40)
+      zombie7=createSprite(displayWidth-300,Math.round(random(100,displayHeight-100)),40,40)
       properties(zombie7);
-      zombie8=createSprite(displayWidth-300,Math.round(random(0,displayHeight-100)),40,40)
+      zombie8=createSprite(displayWidth-300,Math.round(random(100,displayHeight-100)),40,40)
       properties(zombie8);
-      zombie9=createSprite(displayWidth-300,Math.round(random(0,displayHeight-100)),40,40)
+      zombie9=createSprite(displayWidth-300,Math.round(random(100,displayHeight-100)),40,40)
       properties(zombie9);
-      zombie10=createSprite(displayWidth-300,Math.round(random(0,displayHeight-100)),40,40)
+      zombie10=createSprite(displayWidth-300,Math.round(random(100,displayHeight-100)),40,40)
       properties(zombie10);
-      zombie11=createSprite(displayWidth-300,Math.round(random(0,displayHeight-100)),40,40)
+      zombie11=createSprite(displayWidth-300,Math.round(random(100,displayHeight-100)),40,40)
       properties(zombie11);
-      zombie12=createSprite(displayWidth-300,Math.round(random(0,displayHeight-100)),40,40)
+      zombie12=createSprite(displayWidth-300,Math.round(random(100,displayHeight-100)),40,40)
       properties(zombie12);  
         }
    shoot();
@@ -120,9 +122,11 @@ function draw() {
       killed=killed+1
     } 
     if(killed>=6){
-      stage=2
+      stage=stage+1;
       console.log(stage);
-      console.log("Stage 1 Won")
+      console.log("Stage Won")
+      create=0;
+      killed=0;
     }
     
   
